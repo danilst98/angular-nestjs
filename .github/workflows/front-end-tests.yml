@@ -34,7 +34,3 @@ jobs:
       - name: Run Biome
         working-directory: saloon
         run: npm run biome-check
-
-      - name: Run ESLint
-        working-directory: saloon
-        run: npm run lint
