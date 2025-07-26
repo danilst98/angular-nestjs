@@ -7,7 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:saloon": "node dist/saloon/server/server.mjs"
+    "serve:ssr:saloon": "node dist/saloon/server/server.mjs",
+    "ts": "tsc --noEmit",
+    "biome-check": "biome check",
+    "biome-fix": "biome check --write"
   },
   "private": true,
   "dependencies": {
@@ -25,7 +28,7 @@
     "express": "^4.18.2",
     "postcss": "^8.5.6",
     "rxjs": "~7.8.0",
-    "tailwindcss": "^4.1.11",
+    "tailwindcss": "^3.4.17",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },
@@ -33,6 +36,7 @@
     "@angular-devkit/build-angular": "^17.1.1",
     "@angular/cli": "^17.1.1",
     "@angular/compiler-cli": "^17.1.0",
+    "@biomejs/biome": "2.1.2",
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",

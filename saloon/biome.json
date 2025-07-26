@@ -1,0 +1,120 @@
+{
+    "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+    "vcs": {
+        "enabled": true,
+        "clientKind": "git",
+        "useIgnoreFile": true,
+        "defaultBranch": "master"
+    },
+    "formatter": {
+        "enabled": true,
+        "lineWidth": 120,
+        "indentWidth": 4,
+        "indentStyle": "space"
+    },
+    "linter": {
+        "rules": {
+            "a11y": "off",
+            "correctness": {
+                "noUndeclaredDependencies": "off",
+                "noUnusedVariables": "off",
+                "noUnusedImports": "off",
+                "noChildrenProp": "off",
+                "noUnusedFunctionParameters": "off",
+                "noPrecisionLoss": "off",
+                "useExhaustiveDependencies": "off",
+                "noInnerDeclarations": "off",
+                "noUnsafeOptionalChaining": "off",
+                "useJsxKeyInIterable": "off",
+                "noSwitchDeclarations": "off",
+                "noEmptyPattern": "off",
+                "noConstantCondition": "off",
+                "useHookAtTopLevel": "off"
+            },
+            "suspicious": {
+                "noExplicitAny": "off",
+                "noThenProperty": "off",
+                "noDoubleEquals": "off",
+                "noShadowRestrictedNames": "off",
+                "noConfusingVoidType": "off",
+                "noConsole": "off",
+                "noAssignInExpressions": "off",
+                "noAsyncPromiseExecutor": "off",
+                "noSkippedTests": "off",
+                "noImplicitAnyLet": "off",
+                "noExportsInTest": "off",
+                "noArrayIndexKey": "off",
+                "noGlobalIsNan": "off",
+                "noGlobalIsFinite": "off",
+                "noTemplateCurlyInString": "off",
+                "noDuplicateObjectKeys": "off",
+                "noFallthroughSwitchClause": "off",
+                "noDuplicateTestHooks": "off",
+                "noSparseArray": "off",
+                "useDefaultSwitchClauseLast": "off",
+                "noRedeclare": "off",
+                "noEmptyInterface": "off",
+                "noPrototypeBuiltins": "off",
+                "useIsArray": "off",
+                "noRedundantUseStrict": "off",
+                "noDocumentCookie": "off",
+                "noControlCharactersInRegex": "off",
+                "noGlobalAssign": "off",
+                "noExtraNonNullAssertion": "off"
+            },
+            "complexity": {
+                "noBannedTypes": "off",
+                "useLiteralKeys": "off",
+                "noUselessConstructor": "off",
+                "useOptionalChain": "off",
+                "useDateNow": "off",
+                "noUselessFragments": "off",
+                "noUselessTernary": "off",
+                "useArrowFunction": "off",
+                "useFlatMap": "off",
+                "useRegexLiterals": "off",
+                "noUselessLoneBlockStatements": "off",
+                "noUselessEscapeInRegex": "off",
+                "noExtraBooleanCast": "off",
+                "noUselessCatch": "off",
+                "noFlatMapIdentity": "off",
+                "noUselessUndefinedInitialization": "off",
+                "noArguments": "off",
+                "noUselessTypeConstraint": "off"
+            },
+            "performance": {
+                "noAccumulatingSpread": "off"
+            },
+            "style": {
+                "useTemplate": "off",
+                "useNodejsImportProtocol": "off",
+                "noNonNullAssertion": "off",
+                "useConst": "off",
+                "useImportType": "off",
+                "useExponentiationOperator": "off",
+                "useArrayLiterals": "off"
+            },
+            "nursery": {
+                "useUniqueElementIds": "off",
+                "noNestedComponentDefinitions": "off"
+            },
+            "security": {
+                "noDangerouslySetInnerHtml": "off",
+                "noGlobalEval": "off"
+            }
+        },
+        "domains": {
+            "test": "all",
+            "react": "all"
+        }
+    },
+    "javascript": {
+        "formatter": {
+            "arrowParentheses": "asNeeded",
+            "trailingCommas": "es5"
+        }
+    },
+    "files": {
+        "includes": ["saloon/", "saloon-backend/"]
+    }
+}
